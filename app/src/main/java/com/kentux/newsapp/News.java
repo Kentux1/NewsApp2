@@ -1,6 +1,6 @@
 package com.kentux.newsapp;
 
-class News {
+final class News {
     private String mNewsTitle;
     private String mNewsPublicationDate;
     private String mNewsCategory;

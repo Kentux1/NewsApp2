@@ -110,7 +110,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 if (currentNews != null) {
                     Uri newsUri = Uri.parse(currentNews.getUrl());
                     Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
-                    startActivity(websiteIntent);
+                    if (websiteIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(websiteIntent);
+                    }
                 }
             }
         });
@@ -189,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             // Hide progressBar
             loadingIndicator.setVisibility(View.GONE);
 
-            // Check if newsAdapter is not null (which will happen if on launch there was no
+            // Check if mAdapter is not null (which will happen if on launch there was no
             // connection)
             if (mAdapter != null) {
                 // Clear the adapter

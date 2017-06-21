@@ -11,7 +11,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.ObjectStreamException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -131,7 +130,7 @@ class QueryUtils {
                 Log.e(LOG_TAG, "Couldn't find JSON Object with tag: results");
             }
         } catch (JSONException e) {
-            Log.e("QueryUtils", "Problem parsing the earthquake JSON results", e);
+            Log.e("QueryUtils", "Problem parsing the news JSON results", e);
             e.printStackTrace();
         }
         return news;
