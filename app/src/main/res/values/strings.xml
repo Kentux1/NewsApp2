@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">News App</string>
+    <!-- Text to display in the list when there are no news [CHAR LIMIT=NONE] -->
+    <string name="no_news">No news found.</string>
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">News Settings</string>
+
+    <string name="refresh_title">Refresh</string>
+
+    <string name="search_query_label">Keyword for query:</string>
+    <string name="search_query_key" translatable="false">q</string>
+    <string name="search_query_default" translatable="false">London</string>
+
+    <string name="order_by_label">Order By:</string>
+    <string name="order_by_key">order-by</string>
+    <string name="order_by_deafult">@string/order_by_newest_value</string>
+
+    <string name="order_by_relevance_label">Relevance</string>
+    <string name="order_by_relevance_value" translatable="false">relevance</string>
+
+    <string name="order_by_newest_label">Newest</string>
+    <string name="order_by_newest_value" translatable="false">newest</string>
+
+    <string name="my_api_key" translatable="false">f581ed49-894b-44d7-85fa-fa2cd8a4785a</string>
+</resources>
